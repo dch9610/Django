@@ -4,6 +4,9 @@
 ## 2. 가상환경 이름 설정, 활성화
     - virtualenv 가상환경폴더이름 : 입력하면 가상환경이름에 맞는 폴더 생성
     - source 가상환경폴더이름/bin/activate : 가상환경 활성화
+        cd Django_기초
+        source Django_venv/bin/activate
+        cd community
 
 ## 3. Django 설치
     - pip3 install django 
@@ -26,3 +29,8 @@
 ## 5. 서버실행
     - python3 manage.py runserver 
     - python3 manage.py createsuperuser : 관리자도구 로그인화면 계정생성
+
+## 로그인 페이지 연결
+    - templates에 html 파일을 만든후 views.py에서 연결
+    - url 설정 (프로젝트명 폴더안 urls.py에서 설정) user폴더안에 있는 urls를 사용하겠다.
+        - user 폴더안에 urls.py 생성 후 적용한 함수이름을 적어줌
