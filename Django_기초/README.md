@@ -4,9 +4,6 @@
 ## 2. 가상환경 이름 설정, 활성화
     - virtualenv 가상환경폴더이름 : 입력하면 가상환경이름에 맞는 폴더 생성
     - source 가상환경폴더이름/bin/activate : 가상환경 활성화
-        cd Django_기초
-        source Django_venv/bin/activate
-        cd community
 
 ## 3. Django 설치
     - pip3 install django 
@@ -34,3 +31,17 @@
     - templates에 html 파일을 만든후 views.py에서 연결
     - url 설정 (프로젝트명 폴더안 urls.py에서 설정) user폴더안에 있는 urls를 사용하겠다.
         - user 폴더안에 urls.py 생성 후 적용한 함수이름을 적어줌
+
+
+### 시작 순서
+1.  cd Django_기초 -> source Django_venv/bin/activate -> cd community
+2. 변경사항이 있을 경우
+    * python3 manage.py makemigrations -> python3 manage.py migrate
+3. 서버 실행 python3 manage.py runserver
+
+
+### 로그인 기능 만들기 순서
+1. models.py class에 만들고자 하는 형식 선언
+2. 로그인 페이지 (html)에 입력칸 추가
+3. views.py 입력받은 값 선언
+4. admin 페이지에서 확인
