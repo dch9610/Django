@@ -32,7 +32,6 @@
     - url 설정 (프로젝트명 폴더안 urls.py에서 설정) user폴더안에 있는 urls를 사용하겠다.
         - user 폴더안에 urls.py 생성 후 적용한 함수이름을 적어줌
 
-
 ### 시작 순서
 1.  cd Django_기초 -> source Django_venv/bin/activate -> cd community
 2. 변경사항이 있을 경우
